@@ -1,0 +1,230 @@
+html,
+body
+{
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #555;
+	background: #fff;
+}
+
+a:hover {
+	color: #238acb;
+}
+
+h1,
+h2
+{
+	text-align: center;
+	color: #238acb;
+	font-size: 1.8em;
+}
+
+h3 {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #555;
+}
+
+.bold {
+	font-weight: 700;
+	display: inline;
+}
+
+.horizon
+{
+	line-height: 0;
+	z-index: 100;
+	width: 3000px;
+}
+
+.middle
+{
+	z-index: 250;
+	line-height: 0;
+	width: 4500px;
+}
+
+.front
+{
+	z-index: 500;
+	top: 80px;
+	width: 6000px;
+}
+
+.intro
+{
+	position: absolute;
+	left: 500px;
+	top: 0px;
+	padding-right: 50px;
+	background: url('../images/scroll.png') no-repeat right 5px;
+}
+
+.page
+{
+	top: 0px;
+	width: 800px;
+	background: rgba(250,250,250,0.95);
+	padding: 10px 30px;
+	border: 1px #eee solid;
+	position: absolute;
+	height: 500px;
+	overflow: auto;
+}
+
+#panel1
+{
+	left: 275px;
+}
+
+#name
+{
+	left: 2800px;
+	top: 0px;
+	width: 400px;
+	background: rgba(250,250,250,0.9);
+	padding: 10px 30px;
+	border: 1px #eee solid;
+	position: absolute;
+	min-height: 250px;
+	opacity: .9;
+}
+
+#bio-link
+{
+	left: 2600px;
+	top: 240px;
+	width: 400px;
+	background: rgba(250,250,250,0.9);
+	padding: 10px 30px;
+	border: 1px #eee solid;
+	position: absolute;
+	min-height: 250px;
+	opacity: .9;
+}
+
+#work-link
+{
+	left: 3000px;
+	top: 210px;
+	width: 400px;
+	background: rgba(250,250,250,0.9);
+	padding: 10px 30px;
+	border: 1px #eee solid;
+	position: absolute;
+	min-height: 250px;
+	opacity: .9;
+}
+
+#panel3
+{
+	left: 4850px;
+}
+
+#name:hover,
+#bio-link:hover,
+#work-link:hover {
+	z-index: 550;
+	opacity: 1;
+-webkit-box-shadow: 5px 5px 45px 6px rgba(21,61,87,0.8);
+-moz-box-shadow: 5px 5px 45px 6px rgba(21,61,87,0.8);
+box-shadow: 5px 5px 45px 6px rgba(21,61,87,0.8);    
+}
+
+#bio-link:hover,
+#work-link:hover {
+	background-color: rgba(35,138,203,0.8);
+	color: white;
+	cursor: pointer;
+	border: none;
+}
+
+#bio-link,
+#work-link {
+	padding: 10px;
+	color: rgba(20,20,20,0.8);
+	margin: auto;
+	font-size: 1em;
+	line-height: 2em;
+	text-align: center;
+}
+
+#bio-link p,
+#work-link p {
+	font-size: 2.1em;
+	}
+
+#links {
+	margin-left: 220px;
+}
+
+#bio-back {
+	position: absolute;
+	left: 1105px;
+	top: -20px;
+	z-index: 600;
+}
+
+#work-back {
+	position: absolute;
+	left: 4825px;
+	top: -25px;
+	z-index: 600;
+}
+
+#bio-back:hover,
+#work-back:hover {
+	color: #238acb;
+	cursor: pointer;
+}
+
+.icons {
+	position: relative;
+	left: 150px;
+	bottom: -30px;
+}
+
+.img-wrap {
+	position: relative;
+	display: inline-block;
+	width: 240px;
+	height: 174px;
+	margin: 15px 12px;
+	-webkit-box-shadow: 3px 3px 5px 0px rgba(69,69,69,.4);
+	-moz-box-shadow: 3px 3px 5px 0px rgba(69,69,69,.4);
+	box-shadow: 3px 3px 5px 0px rgba(69,69,69,.4);
+}
+
+.img-description {
+	text-align: center;
+	line-height: 174px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(35,138,203,0.9);
+  color: #fff;
+  font-size: 1.5em;
+  visibility: hidden;
+  opacity: 0;
+
+/*  remove comment if you want a gradual transition between states*/
+  -webkit-transition: visibility opacity 0.2s;
+  
+}
+
+.img-wrap:hover .img-description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hidden {
+	display: none;
+}
