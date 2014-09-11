@@ -16,6 +16,7 @@
 
 .modalDialog h3 {
     margin-top: 0px;
+    font-weight: 400;
     }
 
 .modalDialog:target {
@@ -26,14 +27,15 @@
 .modalDialog > div {
     width: 60%;
     max-width: 840px;
+    min-width: 800px;
     min-height: 600px;
     position: relative;
     margin: 5% auto;
     padding: 5px 20px 13px 20px;
     background: #fff;
-    background: -moz-linear-gradient(#fff, #999);
-    background: -webkit-linear-gradient(#fff, #999);
-    background: -o-linear-gradient(#fff, #999);
+    background: -moz-linear-gradient(#fff, #ddd);
+    background: -webkit-linear-gradient(#fff, #ddd);
+    background: -o-linear-gradient(#fff, #ddd);
 }
 
 .close {
@@ -73,28 +75,49 @@
     text-align: center;
     font-size: .8em;
 }
+
+.img-hide,
 .img-show {
-    display: block;
     float: left;
     margin-bottom: 2%;
     max-width: 50%; 
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(69,69,69,.4);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(69,69,69,.4);
+    box-shadow: 3px 3px 5px 0px rgba(69,69,69,.4);
 }
 
+.image-show {
+    display: block;
+}
 .img-hide {
     display: none;
-    max-width: 50%;
-    float: left;
-    margin-bottom: 2%;
 }
 
  .img-thumb {
     margin-right: 2%;
     /*margin-left: 1%;*/
     float: left;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(69,69,69,.4);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(69,69,69,.4);
+    box-shadow: 3px 3px 5px 0px rgba(69,69,69,.4);
  }
 
 .modal-desc {
     float: right;
     height: 400px;
     width: 47%;
+}
+
+.thumb-hover,
+.thumb-selected {
+    /*border: 1px solid #ddd;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(69,69,69,.4);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(69,69,69,.4);
+    box-shadow: 3px 3px 5px 0px rgba(69,69,69,.4);*/
+    border: 2.5px solid #238acb;
+    border-radius: 0px;
+    outline: none;
+    -moz-box-shadow: 0 0 10px #238acb;
+    -webkit-box-shadow: 0 0 10px #238acb;
+    box-shadow: 0 0 10px #238acb;
 }

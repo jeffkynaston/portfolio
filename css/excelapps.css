@@ -1,0 +1,37 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.qcreport-container {
+	margin: 1em auto;
+	width: 900px;
+}
+
+.concretepricer-container {
+	margin: 1em auto;
+	width: 1100px;
+}
+
+iframe {
+	margin: auto;
+	border: 1px solid #aaa;
+}
+
+header {
+	margin-bottom: 10px;
+	overflow: auto;
+}
+.title {
+	font-size: 1.7em;
+	float: left;
+}
+
+.date {
+	margin-left: 10%;
+	font-size: .95em;
+	float: right;
+	margin-right: 45px;
+	margin-top: 12px;
+	vertical-align: bottom;
+}
