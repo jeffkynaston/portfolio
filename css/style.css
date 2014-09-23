@@ -32,8 +32,9 @@ a {
 	color: #555;
 }
 
-.container {
-	display: none;
+.bold {
+	font-weight: 700;
+	display: inline;
 }
 
 #loading {
@@ -41,11 +42,11 @@ a {
 	width: 600px;
 	margin: 4em auto;
 	text-align: center;
-	font-size: 5em;
+	font-size: 3em;
 }
-.bold {
-	font-weight: 700;
-	display: inline;
+
+.container {
+	display: none;
 }
 
 .horizon
@@ -129,7 +130,6 @@ a {
 #name-mobile,
 #bio-link-mobile,
 #work-link-mobile {
-	/*display: none;*/
 	font-size: 2em;
 }
 

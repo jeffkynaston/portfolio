@@ -3,7 +3,6 @@ $( document ).ready(function() {
 });
 
 function bindModalThumbListeners() {
-	// $('.img-thumb').click(function(){console.log('hi')})
 	$('.img-thumb').click(replaceModalImage)
 	$('.img-thumb').hover(highlightThumb, unHighlightThumb)
 }
@@ -52,12 +51,6 @@ function replaceModalImage(e) {
 	
 	$( "[src='"+targetToShow+"']" ).show()
 	$( "[src='"+thumbToShow+"']" ).addClass('thumb-selected')
-	
-	// console.log(targetToShow.search(2))
-	// console.log(targetToShow.search(3))
-
-	// var jQstring = "[src='images/" + targetToShow + "']" 
-	// console.log(e.srcElement)
 }
 
 
