@@ -1,12 +1,18 @@
 $( document ).ready(function() {
-    // setPageSize()
     setPanelOneLeft()
     setPanelThreeLeft()
     setBioBackBtn()
     setWorkBackBtn()
     bindResizeListener()
     killBackgroundMobile()
-    // setGalleryArrows()
+    if (window.innerWidth < (window.innerHeight*1.15)) {
+			window.scrollTo(0, 0)
+		}	
+		else {
+			window.scrollTo(0, 2750)
+		}	
+    $('.container').show()	
+  	$('#loading').hide()
 });
 
 function setPageSize() {
